@@ -241,6 +241,9 @@ This is the command to install pytorch nightly instead which might have performa
 
 ```pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu129```
 
+- **RTX 4090**: Use the stable installation command above. Make sure your NVIDIA drivers are up to date to maximize performance.
+- **RTX 5090**: Support for this card may require the nightly build. Use the nightly command and install the latest drivers.
+
 #### Troubleshooting
 
 If you get the "Torch not compiled with CUDA enabled" error, uninstall torch with:
