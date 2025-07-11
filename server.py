@@ -5,9 +5,12 @@ import traceback
 
 import nodes
 
-# Default shape for new nodes sent to the frontend. Can be overridden with
-# the COMFYUI_DEFAULT_NODE_SHAPE environment variable.
-DEFAULT_NODE_SHAPE = os.getenv("COMFYUI_DEFAULT_NODE_SHAPE", "box")
+# Default shape for new nodes sent to the frontend. Nodes will appear with the
+# "box" style unless explicitly overridden via the
+# ``COMFYUI_DEFAULT_NODE_SHAPE`` environment variable.
+DEFAULT_NODE_SHAPE = "box"
+DEFAULT_NODE_SHAPE = os.environ.get("COMFYUI_DEFAULT_NODE_SHAPE",
+                                     DEFAULT_NODE_SHAPE)
 import folder_paths
 import execution
 import uuid
