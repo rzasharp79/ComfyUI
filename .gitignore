@@ -24,8 +24,8 @@ models/vae/
 models/vae_approx/
 /temp/
 # Custom nodes
-/custom_nodes/comfyui-manager
-/custom_nodes/_pycache_
+custom_nodes/comfyui-manager
+custom_nodes/_pycache_
 !custom_nodes/websocket_image_save.py
 !custom_nodes/example_node.py.example
 extra_model_paths.yaml
