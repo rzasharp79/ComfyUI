@@ -3,7 +3,25 @@ __pycache__/
 /output/
 /input/
 !/input/example.png
-/models/
+# Ignore all generated / downloaded model files
+models/
+models/checkpoints/
+models/clip/
+models/clip_vision/
+models/controlnet/
+models/diffusers/
+models/diffusion_models/
+models/embeddings/
+models/gligen/
+models/hypernetworks/
+models/loras/
+models/photomaker/
+models/style_models/
+models/text_encoders/
+models/unet/
+models/upscale_models/
+models/vae/
+models/vae_approx/
 /temp/
 /custom_nodes/
 !custom_nodes/example_node.py.example
