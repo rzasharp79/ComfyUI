@@ -36,6 +36,9 @@
 
 ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
 
+## Fork Updates
+- Added ComfyUI manager to the default installation.
+
 ## Get Started
 
 #### [Desktop Application](https://www.comfy.org/download)
