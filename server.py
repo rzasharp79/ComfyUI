@@ -4,6 +4,10 @@ import asyncio
 import traceback
 
 import nodes
+
+# Default shape for new nodes sent to the frontend. Can be overridden with
+# the COMFYUI_DEFAULT_NODE_SHAPE environment variable.
+DEFAULT_NODE_SHAPE = os.getenv("COMFYUI_DEFAULT_NODE_SHAPE", "box")
 import folder_paths
 import execution
 import uuid
@@ -618,6 +622,11 @@ class PromptServer():
 
             if hasattr(obj_class, 'API_NODE'):
                 info['api_node'] = obj_class.API_NODE
+
+            # Node shape is used by the frontend to style nodes. If the node
+            # class doesn't define a specific shape, fall back to the global
+            # default.
+            info['shape'] = getattr(obj_class, 'SHAPE', DEFAULT_NODE_SHAPE)
             return info
 
         @routes.get("/object_info")
