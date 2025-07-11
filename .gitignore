@@ -27,6 +27,7 @@ models/vae_approx/
 !custom_nodes/websocket_image_save.py
 !custom_nodes/example_node.py.example
 extra_model_paths.yaml
+run.bat
 /.vs
 .vscode/
 .idea/
